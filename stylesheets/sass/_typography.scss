@@ -15,8 +15,11 @@ body {
 }
 
 h1 {
-	font-size: modular-scale(5);
+	font-size: modular-scale(4);
 	line-height: $line-height-min;
+	@media screen and (min-width: $phone + 1px) {
+		font-size: modular-scale(5);
+	}
 }
 h2 {
 	font-size: modular-scale(4);
@@ -44,7 +47,7 @@ h2 {
 	font-weight: 300;
 	transition: font-size 0.3s ease;
 	@media screen and (max-width: $phone) {
-		font-size: modular-scale(2);
+		font-size: modular-scale(1);
 	}
 }
 .hero__content {
