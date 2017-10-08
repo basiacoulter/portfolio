@@ -63,7 +63,7 @@ nav,
   background: url("../images/hero-img.png");
   background-size: cover;
   color: #ffffff; }
-  @media screen and (min-width: 415px) and (max-width: 768px) {
+  @media screen and (min-width: 321px) and (max-width: 768px) {
     .hero {
       height: 40vw; } }
   @media screen and (min-width: 769px) {
@@ -102,7 +102,7 @@ nav {
   -ms-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: space-between; }
-  @media screen and (min-width: 415px) {
+  @media screen and (min-width: 321px) {
     nav {
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
@@ -128,7 +128,7 @@ nav ul li {
   @media screen and (max-width: 768px) {
     .nav__content {
       font-size: 17px; } }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 320px) {
     .nav__content {
       -webkit-box-ordinal-group: 2;
       -moz-box-ordinal-group: 2;
@@ -146,7 +146,7 @@ nav ul li {
   @media screen and (max-width: 768px) {
     .social-media {
       font-size: 24px; } }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 320px) {
     .social-media {
       -webkit-box-ordinal-group: 1;
       -moz-box-ordinal-group: 1;
@@ -284,7 +284,7 @@ body {
   line-height: 1.4;
   color: #000000;
   transition: font-size 0.3s ease; }
-  @media screen and (min-width: 415px) {
+  @media screen and (min-width: 321px) {
     body {
       font-size: 17px;
       line-height: 1.6; } }
@@ -318,7 +318,7 @@ h2 {
   font-size: 2.368593037em;
   font-weight: 300;
   transition: font-size 0.3s ease; }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 320px) {
     .tagline {
       font-size: 1.776889em; } }
 
