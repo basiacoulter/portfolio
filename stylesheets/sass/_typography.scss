@@ -47,7 +47,7 @@ h2 {
 	font-weight: 300;
 	transition: font-size 0.3s ease;
 	@media screen and (max-width: $phone) {
-		font-size: modular-scale(1);
+		font-size: modular-scale(2);
 	}
 }
 .hero__content {
