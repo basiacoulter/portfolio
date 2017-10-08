@@ -1,0 +1,58 @@
+// --------------------------------------------------
+//                    Typography
+// --------------------------------------------------
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: $font-size-min;
+	line-height: $line-height-min;
+	color: $black;
+	transition: font-size 0.3s ease;
+	@media screen and (min-width: $phone - 1px) {
+		font-size: $font-size-base;
+		line-height: $line-height-base;
+	}
+}
+
+h1 {
+	font-size: modular-scale(5);
+	line-height: $line-height-min;
+}
+h2 {
+	font-size: modular-scale(4);
+}
+h3 {
+	font-size: modular-scale(3);
+	color: $gray;
+	font-weight: 400;
+}
+h4{
+	font-size: modular-scale(2);
+}
+h5 {
+	font-size: modular-scale(1);
+}
+h6 {
+	font-size: modular-scale(-1);
+}
+.tagline {
+	font-size: modular-scale(3);
+	transition: font-size 0.3s ease;
+	@media screen and (max-width: $phone) {
+		font-size: modular-scale(2);
+	}
+}
+.hero__content {
+	h1,
+	p {
+		line-height: 1;
+		margin: 0;
+	}
+}
+
+figcaption {
+	font-size: $font-size-min;
+	line-height: $line-height-min;
+	color: $gray-light;
+	margin-top: 0.25rem;
+}

@@ -1,0 +1,26 @@
+// --------------------------------------------------
+//                    Variables
+// --------------------------------------------------
+
+// Device screen sizes
+$desktop: 1024px;
+$tablet: 768px;
+$phone: 414px;
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$gray-dark: lighten($black, 30%);
+$gray: lighten($black, 50%);
+$gray-light: lighten($black, 70%);
+$orange: #FFAB32;
+$orange-dark: darken(#FFAB32, 12%);
+$orange-very-dark: darken(#FFAB32, 24%);
+
+// Typography
+$font-size-base: 17px;
+$font-size-large: 24px;
+$font-size-min: 14px;
+$font-size-icon: 20px;
+$line-height-base: 1.6;
+$line-height-min: 1.4;

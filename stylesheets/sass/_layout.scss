@@ -1,0 +1,233 @@
+// --------------------------------------------------
+//                    Layout
+// --------------------------------------------------
+
+
+//Resets
+
+* {
+	&:first-child {
+		margin-top: 0;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+figure {
+	margin: 0;
+}
+
+// Styles
+
+body {
+	@include margin(0);
+	@include flexbox();
+	@include flex-direction(column);
+	min-height: 100vh;
+}
+
+header {
+	position: relative;
+}
+
+.container {
+	@include grid-container;
+}
+
+.hero__content,
+nav,
+.main__content,
+.footer__content {
+	@include grid-column(12);
+	@media  screen and (min-width: $tablet + 1px) {
+		@include grid-column(8);
+		@include grid-push(2);
+	}
+	
+}
+.hero {
+	@include flexbox();
+	@include flex-direction(column);
+	@include justify-content(flex-end);
+	height: 50vw;
+	background: url("../images/hero-img.png");
+	background-size: cover;
+	color: $white;
+	@media  screen and (min-width: $phone + 1px) and (max-width: $tablet) {
+		height: 40vw;
+	}
+	@media  screen and (min-width: $tablet + 1px) {
+		height: 30vw;
+	}
+}
+
+.hero__content {
+	position: absolute;
+	bottom: 6rem;
+	z-index: 9;
+	color: $white;
+	text-shadow: 1px 1px 2px $gray-dark; 
+	@media screen and (max-width: $desktop) {
+		bottom: 10rem;
+	}
+}
+
+.hero__content--background {
+	width: 100%;
+	height: 100vw;
+	background-color: $gray;
+	opacity: 0.6;
+}
+
+nav {
+	margin-top: 2rem;
+	@include flexbox();
+	@include flex-direction(column);
+	@include justify-content(space-between);
+	@media screen and (min-width: $phone + 1px) {
+		@include flex-direction(row);
+	}
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li  {
+	display: inline-block;
+	margin-right: 1rem;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.nav__content {
+	@include order(1);
+	@media screen and (max-width: $tablet) {
+		font-size: $font-size-base;
+	}
+	@media screen and (max-width: $phone) {
+		@include order(2);
+	}
+}
+
+.social-media {
+	font-size: $font-size-icon;
+	@include order(2);
+	@media screen and (max-width: $tablet) {
+		font-size: $font-size-large;
+
+	}
+	@media screen and (max-width: $phone) {
+		@include order(1);
+		margin-bottom: 2rem;
+	}
+}
+nav ul.social-media li {
+	@media screen and (max-width: $tablet) {
+		margin-right: 2rem;
+	}
+}
+
+main {
+	padding-top: 2rem;
+	padding-bottom: 12vw;
+	@media  screen and (min-width: $tablet + 1px) {
+		padding-bottom: 6vw;
+	}
+	@include flex(1);
+}
+
+.expertise,
+.about {
+	@include flexbox();
+	@media screen and (max-width: $tablet - 1px) {
+		@include flex-direction(column);
+	}
+}
+
+.expertise p {
+	margin-top: 0;
+}
+
+.figure__container {
+	@include margin(0 2rem 1rem 0);
+	@media screen and (min-width: $tablet + 1px) {
+		@include margin(0 2rem 0 0);
+	}
+}
+
+.figure__container,
+.expertise__description {
+	@include flex-grow(1);
+}
+
+.figure__container {
+	@media print {
+		display: none;
+	}
+}
+
+figure {
+	@include size(90vw 40vw);
+	@media screen and (min-width: $tablet + 1px) {
+		@include size(30vw 20vw);
+	}
+}
+
+figure.basia-coulter__image {
+	@include size(9rem);
+	@include border-top-radius(50%);
+	@include border-right-radius(50%);
+	@include border-bottom-radius(50%);
+	@include border-left-radius(50%);
+	background-image: url("../images/basia-coulter.png");
+	background-size: cover;
+	position: absolute;
+	top: 20%;
+	right: 20%;
+	border: 2px solid $white;
+	box-shadow: 1px 1px 1px $gray; 
+	@media screen and (max-width: $desktop - 1px) {
+		display: none;
+	}
+}
+
+figure.product-discovery__image {
+	background-image: url("../images/product-discovery.png");
+	background-size: cover;
+}
+
+figure.ux-research-and-strategy__image {
+	background-image: url("../images/ux-image.png");
+	background-size: cover;
+}
+
+figure.information-architecture__image {
+	background-image: url("../images/ia.png");
+	background-size: cover;
+}
+
+figure.product-design__image {
+	background-image: url("../images/product-design.png");
+	background-size: cover;
+}
+
+figure.design-leadership__image {
+	background-image: url("../images/design-leadership.png");
+	background-size: cover;
+}
+
+footer {
+	@include flexbox();
+	@include align-items(center);
+	background: $orange;
+	color: $orange-very-dark;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+footer p {
+	@include flex(1);
+}
