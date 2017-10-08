@@ -40,7 +40,7 @@ nav,
 .main__content,
 .footer__content {
 	@include grid-column(12);
-	@media  screen and (min-width: $tablet + 1px) {
+	@media  screen and (min-width: $tablet) {
 		@include grid-column(8);
 		@include grid-push(2);
 	}

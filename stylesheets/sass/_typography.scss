@@ -8,7 +8,7 @@ body {
 	line-height: $line-height-min;
 	color: $black;
 	transition: font-size 0.3s ease;
-	@media screen and (min-width: $phone - 1px) {
+	@media screen and (min-width: $phone + 1px) {
 		font-size: $font-size-base;
 		line-height: $line-height-base;
 	}
