@@ -42,6 +42,12 @@ h1,
 h2 {
 	font-family: 'Roboto Condensed', sans-serif;
 }
+figcaption {
+	font-size: $font-size-min;
+	line-height: $line-height-min;
+	color: $gray-light;
+	margin-top: 0.25rem;
+}
 .tagline {
 	font-size: modular-scale(3);
 	font-weight: 300;
@@ -57,10 +63,8 @@ h2 {
 		margin: 0;
 	}
 }
-
-figcaption {
+.footer__content {
 	font-size: $font-size-min;
-	line-height: $line-height-min;
-	color: $gray-light;
-	margin-top: 0.25rem;
 }
+
+
