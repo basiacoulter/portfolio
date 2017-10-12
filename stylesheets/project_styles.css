@@ -245,6 +245,10 @@ figure.information-architecture__image {
   background-image: url("../images/ia.png");
   background-size: cover; }
 
+figure.prototyping__image {
+  background-image: url("../images/prototyping.png");
+  background-size: cover; }
+
 figure.product-design__image {
   background-image: url("../images/product-design.png");
   background-size: cover; }
