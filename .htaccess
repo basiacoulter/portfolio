@@ -2,6 +2,9 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f       
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-RewriteRule ^index$ / [R=301,L]
+RewriteCond %{HTTP_HOST} ^basiacoulter.com
+RewriteRule (.*) http://www.basiacoulter.com/$1 [R=301,L]
 
+RewriteCond %{THE_REQUEST} ^.*/index
+RewriteRule ^(.*)index$ http://www.basiacoulter.com/$1 [R=301,L]
 
