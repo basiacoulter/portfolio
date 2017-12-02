@@ -5,6 +5,5 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 RewriteCond %{HTTP_HOST} ^basiacoulter.com
 RewriteRule (.*) http://www.basiacoulter.com/$1 [R=301,L]
 
-Options +FollowSymLinks
 RewriteEngine On
-RewriteRule ^index.*$ http://www.basiacoulter.com/ [R=301,L]
+RewriteRule ^index/?$ $1/about [R=301,L]
