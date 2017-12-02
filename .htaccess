@@ -6,6 +6,5 @@ RewriteCond %{HTTP_HOST} ^basiacoulter.com
 RewriteRule (.*) http://www.basiacoulter.com/$1 [R=301,L]
 
 Options +FollowSymLinks
-RewriteCond %{THE_REQUEST} ^.*/index 
-RewriteRule ^(.*)index$ http://www.basiacoulter.com/$1 [R=301,L]
-
+RewriteEngine On
+RewriteRule ^index.*$ http://www.basiacoulter.com/ [R=301,L]
